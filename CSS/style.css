@@ -1,0 +1,123 @@
+/* this part of styling for global elements */
+:root {
+    --main-font: 'Revalia', cursive;
+    --secondary-font: 'Monda', sans-serif;
+    --main-color: #212121;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--main-color);
+}
+.btn {
+    background-color: white;
+    font-size: 3.5rem;
+    font-family: var(--secondary-font);
+    transition: all 0.3s;
+    box-shadow: 0 1rem 2rem white;
+    width: 16rem;
+    height: 6rem;
+    border-radius: 1.8rem;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(219, 217, 217);
+}
+.btn:active {
+    transform: translateY(0.2rem);
+    box-shadow: 0 0.5rem 1rem white;
+}
+/* start styling the whole of the game */
+.header-section {
+    border-bottom: 5px solid white;
+    height: 42vh;
+}
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+.header-text__numbers {
+    color: white;
+    font-size: 2.5rem;
+    font-family: var(--main-font);
+}
+.header-section__heading {
+    text-align: center;
+    margin-top: 4rem;
+    color: white;
+    font-size: 6rem;
+    font-family: var(--main-font);
+}
+/* block of guessed number */
+.number-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+    width: 15rem;
+    height: 12rem;
+    max-width: 100%;
+    text-align: center;
+    background-color: white;
+    color: rgb(50, 49, 49);
+    z-index: 999;
+}
+.number-box__guess {
+    font-size: 7rem;
+    font-family: var(--main-font);
+}
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8rem;
+    height: 45vh;
+}
+.input-section .guessed-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guessed-part__input {
+    background-color: var(--main-color);
+    border: solid white 0.25rem;
+    color: white;
+    margin-bottom: 5rem;
+    width: 23rem;
+    height: 12rem;
+    font-size: 8rem;
+    text-align: center;
+    font-family: var(--main-font);
+}
+.guessed-part__input:focus {
+    border: none;
+}
+.check {
+    font-size: 3.5rem;
+    width: 18rem;
+    height: 7rem;
+}
+.game-statis {
+    color: white;
+    font-size: 4rem;
+    font-family: var(--main-font);
+}
+.game-statis__guess {
+    margin-bottom: 4rem;
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+}
+.game-statis__score {
+    margin-bottom: 2rem;
+}

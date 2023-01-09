@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font type link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+    <!-- Monda font type -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Game | Guess Number</title>
+  </head>
+
+  <body>
+    <!-- header-section -->
+    <header class="header-section">
+      <div class="header-text">
+        <button class="btn again" type="button">Again!</button>
+        <span class="header-text__numbers">(Between 1 and 20)</span>
+      </div>
+      <h1 class="header-section__heading">GUESS My Number!</h1>
+      <section class="number-box">
+        <span class="number-box__guess">?</span>
+      </section>
+    </header>
+    <!-- section of input field & Score -->
+    <section class="input-section">
+      <!-- this part about input-field and check btn -->
+      <div class="guessed-part">
+        <input class="guessed-part__input" type="number">
+        <button class="btn check" type="button">Check!</button>
+      </div>
+      <!-- this part about all scores of game -->
+      <div class="game-statis">
+        <p class="game-statis__guess">start guessing... !</p>
+        <p class="game-statis__score">💯 score: <span class="game-statis__number">20</span></p>
+        <p>🎖️ high score : <span class="game-statis__high-score">0</span></p>
+      </div>
+    </section>
+    <script src="Js/script.js"></script>
+  </body>
+
+</html>
